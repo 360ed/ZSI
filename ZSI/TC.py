@@ -43,7 +43,9 @@ def _get_xsitype(pyclass):
 
 
 # value returned when xsi:nil="true"
-Nilled = None
+class ExplicitNil(object):
+    pass
+Nilled = ExplicitNil()
 UNBOUNDED = 'unbounded'
 
 
